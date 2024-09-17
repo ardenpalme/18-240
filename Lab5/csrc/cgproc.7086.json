@@ -1,0 +1,48 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {},
+        "Adder": {},
+        "NeoPixels": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer": {},
+        "Decoder": {},
+        "ShiftRegister": {},
+        "BarrelShiftRegister": {},
+        "Memory": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "bytes": 10444,
+            "mode": 4,
+            "archive": "archive.172/_7086_archive_1.a"
+        },
+        "DfC1V_d": {
+            "mod": "NeoPixels",
+            "out": "DfC1V_d.o",
+            "bytes": 25574,
+            "mode": 4,
+            "archive": "archive.172/_7086_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.172/_7086_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    10444
+                ],
+                [
+                    "DfC1V_d.o",
+                    25574
+                ]
+            ],
+            "size": 36018
+        }
+    ]
+}

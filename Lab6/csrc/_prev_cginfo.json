@@ -1,0 +1,233 @@
+{
+    "CompileProcesses": [
+        "cgproc.3688.json"
+    ],
+    "MlibObjs": {},
+    "CurCompileUdps": {},
+    "Misc": {
+        "cwd": "/afs/andrew.cmu.edu/usr11/aqd/private/18240/Lab6",
+        "csrc": "csrc",
+        "csrc_abs": "/afs/andrew.cmu.edu/usr11/aqd/private/18240/Lab6/csrc",
+        "default_output_dir": "csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/afs/andrew.cmu.edu/usr11/aqd/private/18240/Lab6/simv.daidir",
+        "archive_dir": "archive.54"
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 63752
+    },
+    "PrevCompiledModules": {
+        "RISC240_top": {
+            "zRShV_d": {
+                "mode": 4,
+                "bytes": 95533,
+                "mod": "RISC240_top",
+                "archive": "archive.54/_3688_archive_1.a",
+                "out": "zRShV_d.o"
+            }
+        },
+        "Multiplexer": {
+            "UxyT3_d": {
+                "mode": 4,
+                "bytes": 6534,
+                "mod": "Multiplexer",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "UxyT3_d.o"
+            }
+        },
+        "SevenSegmentControl": {
+            "pjySW_d": {
+                "mode": 4,
+                "bytes": 11934,
+                "mod": "SevenSegmentControl",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "pjySW_d.o"
+            }
+        },
+        "BarrelShiftRegister": {
+            "ts568_d": {
+                "mode": 4,
+                "bytes": 7941,
+                "mod": "BarrelShiftRegister",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "ts568_d.o"
+            }
+        },
+        "memory_synthesis": {
+            "wrad1_d": {
+                "mode": 4,
+                "bytes": 9090,
+                "mod": "memory_synthesis",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "wrad1_d.o"
+            }
+        },
+        "memory1024x16_program": {
+            "LTm6Y_d": {
+                "mode": 4,
+                "bytes": 13921,
+                "mod": "memory1024x16_program",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "LTm6Y_d.o"
+            }
+        },
+        "comb_write_reg": {
+            "TiIVQ_d": {
+                "mode": 4,
+                "bytes": 8684,
+                "mod": "comb_write_reg",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "TiIVQ_d.o"
+            }
+        },
+        "Memory": {
+            "f0K8C_d": {
+                "mode": 4,
+                "bytes": 9469,
+                "mod": "Memory",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "f0K8C_d.o"
+            }
+        },
+        "Decoder": {
+            "t8TcA_d": {
+                "mode": 4,
+                "bytes": 7983,
+                "mod": "Decoder",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "t8TcA_d.o"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "mode": 4,
+                "bytes": 29004,
+                "mod": "std",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "reYIK_d.o"
+            }
+        },
+        "memory1024x16": {
+            "LBGWb_d": {
+                "mode": 4,
+                "bytes": 8806,
+                "mod": "memory1024x16",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "LBGWb_d.o"
+            }
+        },
+        "_vcs_unit__166629190": {
+            "M32c2_d": {
+                "mode": 4,
+                "bytes": 23956,
+                "mod": "_vcs_unit__166629190",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "M32c2_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "mode": 4,
+                "bytes": 12648,
+                "mod": "...MASTER...",
+                "out": "amcQw_d.o",
+                "archive": "archive.54/_3688_archive_1.a"
+            }
+        },
+        "SevenSegmentDigit": {
+            "wDpck_d": {
+                "mode": 4,
+                "bytes": 10160,
+                "mod": "SevenSegmentDigit",
+                "archive": "archive.54/_prev_archive_1.a",
+                "out": "wDpck_d.o"
+            }
+        }
+    },
+    "stat": {
+        "nMops": 7233
+    },
+    "NameTable": {
+        "_vcs_unit__166629190": [
+            "_vcs_unit__166629190",
+            "M32c2",
+            "module"
+        ],
+        "memory1024x16": [
+            "memory1024x16",
+            "LBGWb",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "memory1024x16_program": [
+            "memory1024x16_program",
+            "LTm6Y",
+            "module"
+        ],
+        "memory_synthesis": [
+            "memory_synthesis",
+            "wrad1",
+            "module"
+        ],
+        "BarrelShiftRegister": [
+            "BarrelShiftRegister",
+            "ts568",
+            "module"
+        ],
+        "SevenSegmentControl": [
+            "SevenSegmentControl",
+            "pjySW",
+            "module"
+        ],
+        "SevenSegmentDigit": [
+            "SevenSegmentDigit",
+            "wDpck",
+            "module"
+        ],
+        "Memory": [
+            "Memory",
+            "f0K8C",
+            "module"
+        ],
+        "comb_write_reg": [
+            "comb_write_reg",
+            "TiIVQ",
+            "module"
+        ],
+        "RISC240_top": [
+            "RISC240_top",
+            "zRShV",
+            "module"
+        ],
+        "Multiplexer": [
+            "Multiplexer",
+            "UxyT3",
+            "module"
+        ],
+        "Decoder": [
+            "Decoder",
+            "t8TcA",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "LVLData": [
+        "SIM"
+    ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "RISC240_top"
+    ],
+    "PEModules": [],
+    "CompileStatus": "Successful"
+}

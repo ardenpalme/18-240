@@ -1,0 +1,86 @@
+{
+    "Misc": {
+        "daidir_abs": "/afs/andrew.cmu.edu/usr11/aqd/private/18240/Lab6/lab6_afs/lab6/simv.daidir",
+        "cwd": "/afs/andrew.cmu.edu/usr11/aqd/private/18240/Lab6/lab6_afs/lab6",
+        "csrc": "csrc",
+        "csrc_abs": "/afs/andrew.cmu.edu/usr11/aqd/private/18240/Lab6/lab6_afs/lab6/csrc",
+        "daidir": "simv.daidir",
+        "archive_dir": "archive.0",
+        "default_output_dir": "csrc"
+    },
+    "CompileStrategy": "fullobj",
+    "NameTable": {
+        "_vcs_unit__1894318162": [
+            "_vcs_unit__1894318162",
+            "R2h2Y",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "memory1024x16": [
+            "memory1024x16",
+            "LBGWb",
+            "module"
+        ],
+        "SevenSegmentControl": [
+            "SevenSegmentControl",
+            "pjySW",
+            "module"
+        ],
+        "memory1024x16_program": [
+            "memory1024x16_program",
+            "LTm6Y",
+            "module"
+        ],
+        "SevenSegmentDigit": [
+            "SevenSegmentDigit",
+            "wDpck",
+            "module"
+        ],
+        "comb_write_reg": [
+            "comb_write_reg",
+            "TiIVQ",
+            "module"
+        ],
+        "RISC240_top": [
+            "RISC240_top",
+            "zRShV",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 62533
+    },
+    "CompileProcesses": [
+        "cgproc.15180.json"
+    ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "_vcs_unit__1894318162",
+        "std",
+        "memory1024x16",
+        "memory1024x16_program",
+        "SevenSegmentDigit",
+        "SevenSegmentControl",
+        "comb_write_reg",
+        "RISC240_top"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileStatus": "Successful",
+    "stat": {
+        "nMops": 6812
+    }
+}

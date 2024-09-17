@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: abstractFSM</title>
+<link type="text/css" rel="stylesheet" href=".urg.css">
+<script type="text/javascript" src=".sortable.js"></script></head>
+<body><center><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</center>
+<br>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="modlist.html#tag_abstractFSM" >abstractFSM</a></span>
+<br clear=all>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>FSM</td></tr><tr>
+<td class="s8 cl rt"> 85.00</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="s7 cl rt"><a href="mod0.html#FSM" > 70.00</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="file:///afs/andrew.cmu.edu/usr2/dchwang/private/18240/lab4/lab4.sv" >/afs/andrew.cmu.edu/usr2/dchwang/private/18240/lab4/lab4.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sml">
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>FSM</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s8 cl rt"> 85.00</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="s7 cl rt"><a href="mod0.html#FSM" > 70.00</a></td>
+<td><a href="mod0.html#inst_tag_0" >abstractFSM_test.DUT</a></td>
+</tr></table></div>
+<br clear=all>
+<hr>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod0.html" >abstractFSM</a><br clear=all>
+<table class="rt">
+<col width="122">
+<col span="4" width="82">
+<tr><th><th>Line No.<th>Total<th>Covered<th>Percent
+<tr class="s10"><td class="lf">TOTAL<td><td>22<td>22<td>100.00
+<tr class="s10"><td class="lf">ALWAYS<td>15<td>8<td>8<td>100.00
+<tr class="s10"><td class="lf">ALWAYS<td>37<td>11<td>11<td>100.00
+<tr class="s10"><td class="lf">ALWAYS<td>58<td>3<td>3<td>100.00
+</table>
+<pre class="code"><br clear=all>
+14                        always_comb begin
+15         1/1              case (currState)
+16                            cStart: begin
+17         1/1                  nextState = (hMove == 4'd6) ? first : cStart;
+18                            end
+19                            first: begin
+20         1/1                  nextState = (hMove == 4'd9) ? second :
+21                                (hMove == 4'd2 || hMove == 4'd3 || hMove == 4'd4 || hMove == 4'd7 ||
+22                                 hMove == 4'd8) ? win1 : first;
+23                            end
+24                            second: begin
+25         1/1                  nextState = (hMove == 4'd2) ? win3 :
+26                                (hMove == 4'd4 || hMove == 4'd7 || hMove == 4'd8) ? win2 : second;
+27                            end
+28         1/1                win1: nextState = win1;
+29         1/1                win2: nextState = win2;
+30         1/1                win3: nextState = win3;
+31         1/1                default: nextState = cStart;
+32                          endcase
+33                        end
+34                      
+35                        // Output Generator
+36                        always_comb begin
+37         1/1              win = 1'b0;
+38         1/1              unique case (currState)
+39         1/1                cStart: cMove = 4'd5;
+40         1/1                first: cMove = 4'd1;
+41         1/1                second: cMove = 4'd3;
+42                            win1: begin
+43         1/1                  cMove = 4'd9;
+44         1/1                  win = 1'b1;
+45                            end
+46                            win2: begin
+47         1/1                  cMove = 4'd2;
+48         1/1                  win = 1'b1;
+49                            end
+50                            win3: begin
+51         1/1                  cMove = 4'd7;
+52         1/1                  win = 1'b1;
+53                            end
+                        MISSING_DEFAULT
+54                          endcase
+55                        end
+56                      
+57                        always_ff @(posedge clock)
+58         1/1              if (~reset_N)
+59         1/1                currState &lt;= cStart;
+60                          else
+61         1/1                currState &lt;= nextState;
+</pre>
+<br clear=all>
+Go to <a href="mod0.html" >top</a>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod0.html" >abstractFSM</a><br clear=all>
+<table align=left>
+<caption><b>Summary for FSM :: currState</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s10">
+<td>States</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr><tr class="s7">
+<td>Transitions</td>
+<td class="rt">10</td>
+<td class="rt">7</td>
+<td class="rt">70.00 </td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: currState</b><hr>
+<table align=left>
+<tr>
+<th>states</th><th nowrap width=80>Covered</th></tr><tr class="uGreen">
+<td nowrap>cStart</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>first</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>second</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>win1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>win2</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>win3</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<table align=left>
+<tr>
+<th>transitions</th><th nowrap width=80>Covered</th></tr><tr class="uGreen">
+<td nowrap>cStart->first</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>first->cStart</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>first->second</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>first->win1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>second->cStart</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>second->win2</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>second->win3</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>win1->cStart</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>win2->cStart</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>win3->cStart</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<table align=left class="sml">
+<tr>
+<th>sequences</th><th nowrap width=80>Covered</th></tr></table><br clear=all>
+<br clear=all>
+Go to <a href="mod0.html" >top</a>
+<hr>
+<a name="inst_tag_0"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_0" >abstractFSM_test.DUT</a></span>
+<br clear=all>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>FSM</td></tr><tr>
+<td class="s8 cl rt"> 85.00</td>
+<td class="s10 cl rt"><a href="mod0.html#Line" >100.00</a></td>
+<td class="s7 cl rt"><a href="mod0.html#FSM" > 70.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>FSM</td></tr><tr>
+<td class="s8 cl rt"> 85.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s7 cl rt"> 70.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Module : </span>
+<br clear=all>
+<table align=left class="sml">
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>FSM</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s8 cl rt"> 85.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s7 cl rt"> 70.00</td>
+<td><a href="mod0.html" >abstractFSM</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left class="sml">
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>FSM</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 93.18</td>
+<td class="s9 cl rt"> 93.18</td>
+<td class="wht cl rt"></td>
+<td><a href="mod1.html#inst_tag_1" >abstractFSM_test</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<br clear=all>
+<span class=inst>no children</span>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.<br clear=all>
+<hr>
+<center><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</center>
+<br>
+<br clear=all>
+<br clear=all>
+<table align=center><tr><td class="s0 cl">0%
+<td class="s1 cl">10%
+<td class="s2 cl">20%
+<td class="s3 cl">30%
+<td class="s4 cl">40%
+<td class="s5 cl">50%
+<td class="s6 cl">60%
+<td class="s7 cl">70%
+<td class="s8 cl">80%
+<td class="s9 cl">90%
+<td class="s10 cl">100%</table></body>
+</html>

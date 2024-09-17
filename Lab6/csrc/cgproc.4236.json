@@ -1,0 +1,53 @@
+{
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "mode": 4,
+            "bytes": 12648,
+            "archive": "archive.55/_4236_archive_1.a"
+        },
+        "zRShV_d": {
+            "mod": "RISC240_top",
+            "out": "zRShV_d.o",
+            "mode": 4,
+            "bytes": 95569,
+            "archive": "archive.55/_4236_archive_1.a"
+        }
+    },
+    "Modules": {
+        "...MASTER...": {},
+        "comb_write_reg": {},
+        "_vcs_unit__166629190": {},
+        "memory1024x16": {},
+        "std": {},
+        "Memory": {},
+        "SevenSegmentControl": {},
+        "memory1024x16_program": {},
+        "SevenSegmentDigit": {},
+        "memory_synthesis": {},
+        "Multiplexer": {},
+        "Decoder": {},
+        "RISC240_top": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "BarrelShiftRegister": {}
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.55/_4236_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    12648
+                ],
+                [
+                    "zRShV_d.o",
+                    95569
+                ]
+            ],
+            "size": 108217
+        }
+    ]
+}

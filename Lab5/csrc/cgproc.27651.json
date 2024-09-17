@@ -1,0 +1,64 @@
+{
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "mode": 4,
+            "bytes": 11892,
+            "archive": "archive.204/_27651_archive_1.a"
+        },
+        "DfC1V_d": {
+            "mod": "NeoPixels",
+            "out": "DfC1V_d.o",
+            "mode": 4,
+            "bytes": 23490,
+            "archive": "archive.204/_27651_archive_1.a"
+        },
+        "f45Jv_d": {
+            "mod": "fsm",
+            "out": "f45Jv_d.o",
+            "mode": 4,
+            "bytes": 14015,
+            "archive": "archive.204/_27651_archive_1.a"
+        }
+    },
+    "Modules": {
+        "Decoder": {},
+        "...MASTER...": {},
+        "NeoPixels": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Counter": {},
+        "std": {},
+        "Memory": {},
+        "fsm": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "Adder": {},
+        "Multiplexer": {},
+        "ShiftRegister": {},
+        "BarrelShiftRegister": {}
+    },
+    "ObjArchives": [
+        {
+            "size": 49397,
+            "archive": "archive.204/_27651_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    11892
+                ],
+                [
+                    "DfC1V_d.o",
+                    23490
+                ],
+                [
+                    "f45Jv_d.o",
+                    14015
+                ]
+            ]
+        }
+    ]
+}

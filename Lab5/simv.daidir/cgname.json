@@ -1,0 +1,57 @@
+{
+    "Counter": [
+        "Counter",
+        "Nsh6f",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "NeoPixels": [
+        "NeoPixels",
+        "DfC1V",
+        "module"
+    ],
+    "Memory": [
+        "Memory",
+        "f0K8C",
+        "module"
+    ],
+    "fsm": [
+        "fsm",
+        "f45Jv",
+        "module"
+    ],
+    "Adder": [
+        "Adder",
+        "xUt1z",
+        "module"
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module"
+    ],
+    "ShiftRegister": [
+        "ShiftRegister",
+        "WB1J1",
+        "module"
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module"
+    ]
+}

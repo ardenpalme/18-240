@@ -1,0 +1,47 @@
+{
+    "ObjArchives": [
+        {
+            "size": 93010,
+            "archive": "archive.66/_6613_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    9170
+                ],
+                [
+                    "YHv3A_d.o",
+                    83840
+                ]
+            ]
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {},
+        "std": {},
+        "Memory": {},
+        "BarrelShiftRegister": {},
+        "Register": {},
+        "Decoder": {},
+        "task3_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "CheckPeg": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "out": "amcQw_d.o",
+            "mod": "...MASTER...",
+            "mode": 4,
+            "bytes": 9170,
+            "archive": "archive.66/_6613_archive_1.a"
+        },
+        "YHv3A_d": {
+            "out": "YHv3A_d.o",
+            "mod": "task3_tb",
+            "mode": 4,
+            "bytes": 83840,
+            "archive": "archive.66/_6613_archive_1.a"
+        }
+    }
+}

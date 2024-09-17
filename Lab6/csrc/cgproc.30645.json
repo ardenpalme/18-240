@@ -1,0 +1,116 @@
+{
+    "Modules": {
+        "Memory": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "mult_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Multiplexer": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "BarrelShiftRegister": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Decoder": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "bytes": 9090,
+            "archive": "archive.0/_30645_archive_1.a"
+        },
+        "reYIK_d": {
+            "mode": 4,
+            "mod": "std",
+            "out": "reYIK_d.o",
+            "bytes": 29004,
+            "archive": "archive.0/_30645_archive_1.a"
+        },
+        "tfDmJ_d": {
+            "mode": 4,
+            "mod": "mult_tb",
+            "out": "tfDmJ_d.o",
+            "bytes": 30121,
+            "archive": "archive.0/_30645_archive_1.a"
+        },
+        "UxyT3_d": {
+            "mode": 4,
+            "mod": "Multiplexer",
+            "out": "UxyT3_d.o",
+            "bytes": 6454,
+            "archive": "archive.0/_30645_archive_1.a"
+        },
+        "ts568_d": {
+            "mode": 4,
+            "mod": "BarrelShiftRegister",
+            "out": "ts568_d.o",
+            "bytes": 7861,
+            "archive": "archive.0/_30645_archive_1.a"
+        },
+        "t8TcA_d": {
+            "mode": 4,
+            "mod": "Decoder",
+            "out": "t8TcA_d.o",
+            "bytes": 7903,
+            "archive": "archive.0/_30645_archive_1.a"
+        },
+        "f0K8C_d": {
+            "mode": 4,
+            "mod": "Memory",
+            "out": "f0K8C_d.o",
+            "bytes": 9389,
+            "archive": "archive.0/_30645_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_30645_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    9090
+                ],
+                [
+                    "reYIK_d.o",
+                    29004
+                ],
+                [
+                    "tfDmJ_d.o",
+                    30121
+                ],
+                [
+                    "UxyT3_d.o",
+                    6454
+                ],
+                [
+                    "t8TcA_d.o",
+                    7903
+                ],
+                [
+                    "ts568_d.o",
+                    7861
+                ],
+                [
+                    "f0K8C_d.o",
+                    9389
+                ]
+            ],
+            "size": 99822
+        }
+    ]
+}

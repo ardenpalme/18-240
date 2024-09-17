@@ -1,0 +1,21 @@
+Dashboard
+
+Date: Thu Oct 22 19:03:03 2020
+
+User: dchwang
+
+Version: J-2014.12-SP3-1
+Command line: urg -dir simv.vdb -format text 
+
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   FSM    
+100.00 100.00 100.00 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   FSM    NAME             
+100.00 100.00 100.00 abstractFSM_test 
+

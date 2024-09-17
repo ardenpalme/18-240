@@ -1,0 +1,48 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.171/_27015_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    9873
+                ],
+                [
+                    "g7hgQ_d.o",
+                    32263
+                ]
+            ],
+            "size": 42136
+        }
+    ],
+    "Modules": {
+        "...MASTER...": {},
+        "Multiplexer": {},
+        "std": {},
+        "tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "Adder": {},
+        "Decoder": {},
+        "BarrelShiftRegister": {},
+        "Memory": {},
+        "ShiftRegister": {}
+    },
+    "CompUnits": {
+        "g7hgQ_d": {
+            "mod": "tb",
+            "out": "g7hgQ_d.o",
+            "archive": "archive.171/_27015_archive_1.a",
+            "bytes": 32263,
+            "mode": 4
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "archive": "archive.171/_27015_archive_1.a",
+            "bytes": 9873,
+            "mode": 4
+        }
+    }
+}

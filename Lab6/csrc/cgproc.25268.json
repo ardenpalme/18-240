@@ -1,0 +1,67 @@
+{
+    "ObjArchives": [
+        {
+            "size": 130487,
+            "archive": "archive.9/_25268_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    12648
+                ],
+                [
+                    "M32c2_d.o",
+                    23260
+                ],
+                [
+                    "zRShV_d.o",
+                    94579
+                ]
+            ]
+        }
+    ],
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "bytes": 12648,
+            "mode": 4,
+            "archive": "archive.9/_25268_archive_1.a"
+        },
+        "M32c2_d": {
+            "mod": "_vcs_unit__166629190",
+            "out": "M32c2_d.o",
+            "bytes": 23260,
+            "mode": 4,
+            "archive": "archive.9/_25268_archive_1.a"
+        },
+        "zRShV_d": {
+            "mod": "RISC240_top",
+            "out": "zRShV_d.o",
+            "bytes": 94579,
+            "mode": 4,
+            "archive": "archive.9/_25268_archive_1.a"
+        }
+    },
+    "Modules": {
+        "...MASTER...": {},
+        "_vcs_unit__166629190": {
+            "Compiled Times": 2,
+            "Compiled": "Yes"
+        },
+        "memory1024x16": {},
+        "std": {},
+        "comb_write_reg": {},
+        "memory1024x16_program": {},
+        "SevenSegmentDigit": {},
+        "SevenSegmentControl": {},
+        "Memory": {},
+        "memory_synthesis": {},
+        "Multiplexer": {},
+        "Decoder": {},
+        "BarrelShiftRegister": {},
+        "RISC240_top": {
+            "Compiled Times": 10,
+            "Compiled": "Yes"
+        }
+    }
+}

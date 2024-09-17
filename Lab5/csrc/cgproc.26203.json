@@ -1,0 +1,78 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "Multiplexer": {},
+        "fsm": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "Memory": {},
+        "Adder": {},
+        "BarrelShiftRegister": {},
+        "std": {},
+        "Decoder": {},
+        "tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "Counter": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "ShiftRegister": {}
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "bytes": 11317,
+            "out": "amcQw_d.o",
+            "archive": "archive.203/_26203_archive_1.a",
+            "mode": 4
+        },
+        "f45Jv_d": {
+            "mod": "fsm",
+            "bytes": 14027,
+            "out": "f45Jv_d.o",
+            "archive": "archive.203/_26203_archive_1.a",
+            "mode": 4
+        },
+        "g7hgQ_d": {
+            "mod": "tb",
+            "bytes": 30330,
+            "out": "g7hgQ_d.o",
+            "archive": "archive.203/_26203_archive_1.a",
+            "mode": 4
+        },
+        "Nsh6f_d": {
+            "mod": "Counter",
+            "bytes": 7975,
+            "out": "Nsh6f_d.o",
+            "archive": "archive.203/_26203_archive_1.a",
+            "mode": 4
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.203/_26203_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    11317
+                ],
+                [
+                    "f45Jv_d.o",
+                    14027
+                ],
+                [
+                    "g7hgQ_d.o",
+                    30330
+                ],
+                [
+                    "Nsh6f_d.o",
+                    7975
+                ]
+            ],
+            "size": 63649
+        }
+    ]
+}

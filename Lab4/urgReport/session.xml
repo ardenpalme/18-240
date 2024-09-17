@@ -1,0 +1,18 @@
+<session version="1.1" release="J-2014.12-SP3-1" timestp="2020-10-22 23:03:00 GMT">
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="272/272" />
+    <metric name="FSM" value="10/10" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+  </scope>
+  </old_coverage>
+</session>

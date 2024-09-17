@@ -1,0 +1,673 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version J-2014.12-SP3-1_Full64; Runtime version J-2014.12-SP3-1_Full64;  Dec  7 21:34 2020
+cycle           0
+CState: FETCH  NState: FETCH1
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 0     selRS1: 0     selRS2: 0
+Dest: DEST_MAR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0000  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0000  ALUInB: 0xxxxx  ALUOut: 0x0000
+PC:     0x0000  IR:     0x0000
+MAR:    0x0000  MDR     0x0000  ZCNV:   0000
+a: 00 b: 00 out: xxxx
+==================================================
+cycle           1
+CState: FETCH1  NState: FETCH2
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 0     selRS1: 0     selRS2: 0
+Dest: DEST_PC LoadCC: NO_LOAD RE: MEM_RD WE: NO_WR
+AddrBus: 0000  DataBus: 2040
+ALUop: F_A_PLUS_2     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0000  ALUInB: 0xxxxx  ALUOut: 0x0002
+PC:     0x0000  IR:     0x0000
+MAR:    0x0000  MDR     0x0000  ZCNV:   0000
+a: 00 b: 00 out: xxxx
+==================================================
+cycle           2
+CState: FETCH2  NState: DECODE
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 0     selRS1: 0     selRS2: 0
+Dest: DEST_IR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0000  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_MDR      SrcB: MUX_UNDEF
+ALUInA: 0x2040  ALUInB: 0xxxxx  ALUOut: 0x2040
+PC:     0x0002  IR:     0x0000
+MAR:    0x0000  MDR     0x2040  ZCNV:   0000
+a: 00 b: 40 out: xxxx
+==================================================
+cycle           3
+CState: DECODE  NState: MV
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 0     selRS2: 0
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0000  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x0002  IR:     0x2040
+MAR:    0x0000  MDR     0x2040  ZCNV:   0000
+a: 00 b: 40 out: xxxx
+==================================================
+cycle           4
+CState: MV  NState: FETCH
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 0     selRS2: 0
+Dest: DEST_REG LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0000  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_REG      SrcB: MUX_UNDEF
+ALUInA: 0x0000  ALUInB: 0xxxxx  ALUOut: 0x0000
+PC:     0x0002  IR:     0x2040
+MAR:    0x0000  MDR     0x2040  ZCNV:   0000
+a: 00 b: 40 out: xxxx
+==================================================
+cycle           5
+CState: FETCH  NState: FETCH1
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 0     selRS2: 0
+Dest: DEST_MAR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0000  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0002  ALUInB: 0xxxxx  ALUOut: 0x0002
+PC:     0x0002  IR:     0x2040
+MAR:    0x0000  MDR     0x2040  ZCNV:   0000
+a: 00 b: 40 out: xxxx
+==================================================
+cycle           6
+CState: FETCH1  NState: FETCH2
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 0     selRS2: 0
+Dest: DEST_PC LoadCC: NO_LOAD RE: MEM_RD WE: NO_WR
+AddrBus: 0002  DataBus: 3080
+ALUop: F_A_PLUS_2     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0002  ALUInB: 0xxxxx  ALUOut: 0x0004
+PC:     0x0002  IR:     0x2040
+MAR:    0x0002  MDR     0x2040  ZCNV:   0000
+a: 00 b: 40 out: xxxx
+==================================================
+cycle           7
+CState: FETCH2  NState: DECODE
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 0     selRS2: 0
+Dest: DEST_IR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0002  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_MDR      SrcB: MUX_UNDEF
+ALUInA: 0x3080  ALUInB: 0xxxxx  ALUOut: 0x3080
+PC:     0x0004  IR:     0x2040
+MAR:    0x0002  MDR     0x3080  ZCNV:   0000
+a: 00 b: 80 out: xxxx
+==================================================
+cycle           8
+CState: DECODE  NState: ADDI
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 2     selRS1: 0     selRS2: 0
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0002  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x0004  IR:     0x3080
+MAR:    0x0002  MDR     0x3080  ZCNV:   0000
+a: 00 b: 80 out: xxxx
+==================================================
+cycle           9
+CState: ADDI  NState: ADDI1
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 2     selRS1: 0     selRS2: 0
+Dest: DEST_MAR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0002  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0004  ALUInB: 0xxxxx  ALUOut: 0x0004
+PC:     0x0004  IR:     0x3080
+MAR:    0x0002  MDR     0x3080  ZCNV:   0000
+a: 00 b: 80 out: xxxx
+==================================================
+cycle          10
+CState: ADDI1  NState: ADDI2
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 2     selRS1: 0     selRS2: 0
+Dest: DEST_PC LoadCC: NO_LOAD RE: MEM_RD WE: NO_WR
+AddrBus: 0004  DataBus: 000a
+ALUop: F_A_PLUS_2     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0004  ALUInB: 0xxxxx  ALUOut: 0x0006
+PC:     0x0004  IR:     0x3080
+MAR:    0x0004  MDR     0x3080  ZCNV:   0000
+a: 00 b: 80 out: xxxx
+==================================================
+cycle          11
+CState: ADDI2  NState: FETCH
+R0: 0x0000  R1: 0x0000  R2: 0x0000  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 2     selRS1: 0     selRS2: 0
+Dest: DEST_REG LoadCC: LOAD_CC RE: NO_RD WE: NO_WR
+AddrBus: 0004  DataBus: zzzz
+ALUop: F_A_PLUS_B     SrcA: MUX_REG      SrcB: MUX_MDR
+ALUInA: 0x0000  ALUInB: 0x000a  ALUOut: 0x000a
+PC:     0x0006  IR:     0x3080
+MAR:    0x0004  MDR     0x000a  ZCNV:   0000
+a: 00 b: 0a out: xxxx
+==================================================
+cycle          12
+CState: FETCH  NState: FETCH1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 2     selRS1: 0     selRS2: 0
+Dest: DEST_MAR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0004  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0006  ALUInB: 0xxxxx  ALUOut: 0x0006
+PC:     0x0006  IR:     0x3080
+MAR:    0x0004  MDR     0x000a  ZCNV:   0000
+a: 00 b: 0a out: xxxx
+==================================================
+cycle          13
+CState: FETCH1  NState: FETCH2
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 2     selRS1: 0     selRS2: 0
+Dest: DEST_PC LoadCC: NO_LOAD RE: MEM_RD WE: NO_WR
+AddrBus: 0006  DataBus: 30c0
+ALUop: F_A_PLUS_2     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0006  ALUInB: 0xxxxx  ALUOut: 0x0008
+PC:     0x0006  IR:     0x3080
+MAR:    0x0006  MDR     0x000a  ZCNV:   0000
+a: 00 b: 0a out: xxxx
+==================================================
+cycle          14
+CState: FETCH2  NState: DECODE
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 2     selRS1: 0     selRS2: 0
+Dest: DEST_IR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0006  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_MDR      SrcB: MUX_UNDEF
+ALUInA: 0x30c0  ALUInB: 0xxxxx  ALUOut: 0x30c0
+PC:     0x0008  IR:     0x3080
+MAR:    0x0006  MDR     0x30c0  ZCNV:   0000
+a: 00 b: c0 out: xxxx
+==================================================
+cycle          15
+CState: DECODE  NState: ADDI
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 3     selRS1: 0     selRS2: 0
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0006  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x0008  IR:     0x30c0
+MAR:    0x0006  MDR     0x30c0  ZCNV:   0000
+a: 00 b: c0 out: xxxx
+==================================================
+cycle          16
+CState: ADDI  NState: ADDI1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 3     selRS1: 0     selRS2: 0
+Dest: DEST_MAR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0006  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0008  ALUInB: 0xxxxx  ALUOut: 0x0008
+PC:     0x0008  IR:     0x30c0
+MAR:    0x0006  MDR     0x30c0  ZCNV:   0000
+a: 00 b: c0 out: xxxx
+==================================================
+cycle          17
+CState: ADDI1  NState: ADDI2
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 3     selRS1: 0     selRS2: 0
+Dest: DEST_PC LoadCC: NO_LOAD RE: MEM_RD WE: NO_WR
+AddrBus: 0008  DataBus: 0002
+ALUop: F_A_PLUS_2     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x0008  ALUInB: 0xxxxx  ALUOut: 0x000a
+PC:     0x0008  IR:     0x30c0
+MAR:    0x0008  MDR     0x30c0  ZCNV:   0000
+a: 00 b: c0 out: xxxx
+==================================================
+cycle          18
+CState: ADDI2  NState: FETCH
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0000
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 3     selRS1: 0     selRS2: 0
+Dest: DEST_REG LoadCC: LOAD_CC RE: NO_RD WE: NO_WR
+AddrBus: 0008  DataBus: zzzz
+ALUop: F_A_PLUS_B     SrcA: MUX_REG      SrcB: MUX_MDR
+ALUInA: 0x0000  ALUInB: 0x0002  ALUOut: 0x0002
+PC:     0x000a  IR:     0x30c0
+MAR:    0x0008  MDR     0x0002  ZCNV:   0000
+a: 00 b: 02 out: xxxx
+==================================================
+cycle          19
+CState: FETCH  NState: FETCH1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 3     selRS1: 0     selRS2: 0
+Dest: DEST_MAR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 0008  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x000a  ALUInB: 0xxxxx  ALUOut: 0x000a
+PC:     0x000a  IR:     0x30c0
+MAR:    0x0008  MDR     0x0002  ZCNV:   0000
+a: 00 b: 02 out: xxxx
+==================================================
+cycle          20
+CState: FETCH1  NState: FETCH2
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 3     selRS1: 0     selRS2: 0
+Dest: DEST_PC LoadCC: NO_LOAD RE: MEM_RD WE: NO_WR
+AddrBus: 000a  DataBus: 6053
+ALUop: F_A_PLUS_2     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x000a  ALUInB: 0xxxxx  ALUOut: 0x000c
+PC:     0x000a  IR:     0x30c0
+MAR:    0x000a  MDR     0x0002  ZCNV:   0000
+a: 00 b: 02 out: xxxx
+==================================================
+cycle          21
+CState: FETCH2  NState: DECODE
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 3     selRS1: 0     selRS2: 0
+Dest: DEST_IR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_MDR      SrcB: MUX_UNDEF
+ALUInA: 0x6053  ALUInB: 0xxxxx  ALUOut: 0x6053
+PC:     0x000c  IR:     0x30c0
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 00 b: 53 out: xxxx
+==================================================
+cycle          22
+CState: DECODE  NState: MUL
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: xxxx
+==================================================
+cycle          23
+CState: MUL  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: xxxx
+==================================================
+cycle          24
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: xxxx
+==================================================
+cycle          25
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 0000
+==================================================
+cycle          26
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 000a
+==================================================
+cycle          27
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 000a
+==================================================
+cycle          28
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 000a
+==================================================
+cycle          29
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 001e
+==================================================
+cycle          30
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 001e
+==================================================
+cycle          31
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 001e
+==================================================
+cycle          32
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 001e
+==================================================
+cycle          33
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 001e
+==================================================
+cycle          34
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 001e
+==================================================
+cycle          35
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 001e
+==================================================
+cycle          36
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 00be
+==================================================
+cycle          37
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 00be
+==================================================
+cycle          38
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 00be
+==================================================
+cycle          39
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 00be
+==================================================
+cycle          40
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 00be
+==================================================
+cycle          41
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 033e
+==================================================
+cycle          42
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 033e
+==================================================
+cycle          43
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 033e
+==================================================
+cycle          44
+CState: MUL1  NState: MUL1
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 033e
+==================================================
+cycle          45
+CState: MUL1  NState: FETCH
+R0: 0x0000  R1: 0x0000  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_REG LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 033e
+==================================================
+cycle          46
+CState: FETCH  NState: FETCH1
+R0: 0x0000  R1: 0x033e  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_MAR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000a  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x000c  ALUInB: 0xxxxx  ALUOut: 0x000c
+PC:     0x000c  IR:     0x6053
+MAR:    0x000a  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 033e
+==================================================
+cycle          47
+CState: FETCH1  NState: FETCH2
+R0: 0x0000  R1: 0x033e  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_PC LoadCC: NO_LOAD RE: MEM_RD WE: NO_WR
+AddrBus: 000c  DataBus: fe00
+ALUop: F_A_PLUS_2     SrcA: MUX_PC      SrcB: MUX_UNDEF
+ALUInA: 0x000c  ALUInB: 0xxxxx  ALUOut: 0x000e
+PC:     0x000c  IR:     0x6053
+MAR:    0x000c  MDR     0x6053  ZCNV:   0000
+a: 0a b: 53 out: 033e
+==================================================
+cycle          48
+CState: FETCH2  NState: DECODE
+R0: 0x0000  R1: 0x033e  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 1     selRS1: 2     selRS2: 3
+Dest: DEST_IR LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000c  DataBus: zzzz
+ALUop: F_A     SrcA: MUX_MDR      SrcB: MUX_UNDEF
+ALUInA: 0xfe00  ALUInB: 0xxxxx  ALUOut: 0xfe00
+PC:     0x000e  IR:     0x6053
+MAR:    0x000c  MDR     0xfe00  ZCNV:   0000
+a: 0a b: 00 out: 033e
+==================================================
+cycle          49
+CState: DECODE  NState: STOP
+R0: 0x0000  R1: 0x033e  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 0     selRS1: 0     selRS2: 0
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000c  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000e  IR:     0xfe00
+MAR:    0x000c  MDR     0xfe00  ZCNV:   0000
+a: 00 b: 00 out: 033e
+==================================================
+cycle          50
+CState: STOP  NState: STOP1
+R0: 0x0000  R1: 0x033e  R2: 0x000a  R3: 0x0002
+R4: 0x0000  R5: 0x0000  R6: 0x0000  R7: 0x0000
+selRD: 0     selRS1: 0     selRS2: 0
+Dest: DEST_NONE LoadCC: NO_LOAD RE: NO_RD WE: NO_WR
+AddrBus: 000c  DataBus: zzzz
+ALUop: F_UNDEF     SrcA: MUX_UNDEF      SrcB: MUX_UNDEF
+ALUInA: 0xxxxx  ALUInB: 0xxxxx  ALUOut: 0xxxxx
+PC:     0x000e  IR:     0xfe00
+MAR:    0x000c  MDR     0xfe00  ZCNV:   0000
+a: 00 b: 00 out: 033e
+==================================================
+STOP occurred at time                  510
+$finish called from file "controlpath.sv", line 91.
+$finish at simulation time                  510
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 510
+CPU Time:      0.170 seconds;       Data structure size:   0.0Mb
+Mon Dec  7 21:34:33 2020

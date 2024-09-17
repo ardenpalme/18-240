@@ -1,0 +1,147 @@
+{
+    "Modules": {
+        "memory1024x16": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "std": {},
+        "_vcs_unit__3329936646": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "memory1024x16_program": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "RISC240_top": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "SevenSegmentDigit": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "comb_write_reg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "SevenSegmentControl": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "memory_synthesis": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "mode": 4,
+            "bytes": 11260,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "W2vaD_d": {
+            "mod": "_vcs_unit__3329936646",
+            "out": "W2vaD_d.o",
+            "mode": 4,
+            "bytes": 20503,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "wrad1_d": {
+            "mod": "memory_synthesis",
+            "out": "wrad1_d.o",
+            "mode": 4,
+            "bytes": 8971,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "LBGWb_d": {
+            "mod": "memory1024x16",
+            "out": "LBGWb_d.o",
+            "mode": 4,
+            "bytes": 8807,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "LTm6Y_d": {
+            "mod": "memory1024x16_program",
+            "out": "LTm6Y_d.o",
+            "mode": 4,
+            "bytes": 13927,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "wDpck_d": {
+            "mod": "SevenSegmentDigit",
+            "out": "wDpck_d.o",
+            "mode": 4,
+            "bytes": 10161,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "pjySW_d": {
+            "mod": "SevenSegmentControl",
+            "out": "pjySW_d.o",
+            "mode": 4,
+            "bytes": 11935,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "zRShV_d": {
+            "mod": "RISC240_top",
+            "out": "zRShV_d.o",
+            "mode": 4,
+            "bytes": 74362,
+            "archive": "archive.1/_17251_archive_1.a"
+        },
+        "TiIVQ_d": {
+            "mod": "comb_write_reg",
+            "out": "TiIVQ_d.o",
+            "mode": 4,
+            "bytes": 8685,
+            "archive": "archive.1/_17251_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_17251_archive_1.a",
+            "size": 168611,
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    11260
+                ],
+                [
+                    "W2vaD_d.o",
+                    20503
+                ],
+                [
+                    "LBGWb_d.o",
+                    8807
+                ],
+                [
+                    "LTm6Y_d.o",
+                    13927
+                ],
+                [
+                    "wDpck_d.o",
+                    10161
+                ],
+                [
+                    "pjySW_d.o",
+                    11935
+                ],
+                [
+                    "TiIVQ_d.o",
+                    8685
+                ],
+                [
+                    "wrad1_d.o",
+                    8971
+                ],
+                [
+                    "zRShV_d.o",
+                    74362
+                ]
+            ]
+        }
+    ]
+}

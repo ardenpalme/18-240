@@ -1,0 +1,87 @@
+{
+    "Modules": {
+        "Task3": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "BarrelShiftRegister": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {},
+        "Memory": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "CheckPeg": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "amcQw_d.o",
+            "archive": "archive.41/_16569_archive_1.a",
+            "bytes": 8938,
+            "mode": 4
+        },
+        "yZ5Kw_d": {
+            "mod": "Task3",
+            "out": "yZ5Kw_d.o",
+            "archive": "archive.41/_16569_archive_1.a",
+            "bytes": 69020,
+            "mode": 4
+        },
+        "f8YD0_d": {
+            "mod": "CheckPeg",
+            "out": "f8YD0_d.o",
+            "archive": "archive.41/_16569_archive_1.a",
+            "bytes": 13174,
+            "mode": 4
+        },
+        "ts568_d": {
+            "mod": "BarrelShiftRegister",
+            "out": "ts568_d.o",
+            "archive": "archive.41/_16569_archive_1.a",
+            "bytes": 7861,
+            "mode": 4
+        },
+        "f0K8C_d": {
+            "mod": "Memory",
+            "out": "f0K8C_d.o",
+            "archive": "archive.41/_16569_archive_1.a",
+            "bytes": 9389,
+            "mode": 4
+        }
+    },
+    "ObjArchives": [
+        {
+            "size": 108382,
+            "archive": "archive.41/_16569_archive_1.a",
+            "objects": [
+                [
+                    "amcQw_d.o",
+                    8938
+                ],
+                [
+                    "yZ5Kw_d.o",
+                    69020
+                ],
+                [
+                    "f8YD0_d.o",
+                    13174
+                ],
+                [
+                    "ts568_d.o",
+                    7861
+                ],
+                [
+                    "f0K8C_d.o",
+                    9389
+                ]
+            ]
+        }
+    ]
+}

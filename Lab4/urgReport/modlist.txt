@@ -1,0 +1,13 @@
+Design Module List
+
+Total Module Definition Coverage Summary 
+SCORE  LINE   FSM    
+100.00 100.00 100.00 
+
+
+Total modules in report: 2
+-------------------------------------------------------------------------------
+SCORE  LINE   FSM    NAME             
+100.00 100.00 100.00 abstractFSM      
+100.00 100.00 --     abstractFSM_test 
+

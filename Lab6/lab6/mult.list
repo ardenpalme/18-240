@@ -1,0 +1,57 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+0000 F800             BRA             
+0002 0200                     START   
+0200 2840  START      LW      R1 R0   
+0202 0100                     A       
+0204 2880             LW      R2 R0   
+0206 0102                     B       
+0208 28C0             LW      R3 R0   
+020A 0104                     Y       
+020C 30C0             LI      R3      
+020E 0000                     $0      
+0210 5110  STEP2      SLT     R4 R2 R0
+0212 9800             BRN             
+0214 021A                     NEGATE  
+0216 F800             BRA             
+0218 0220                     LOOPBEGIN
+021A 8090  NEGATE     NOT     R2 R2   
+021C 3090             ADDI    R2 R2   
+021E 0001                     $1      
+0220 31C0  LOOPBEGI   LI      R7      
+0222 0000                     $0      
+0224 3140  STEP3      LI      R5      
+0226 0001                     $1      
+0228 9195             AND     R6 R2 R5
+022A 5230             SLTI    R0 R6   
+022C 0001                     $1      
+022E C800             BRZ             
+0230 0236                     ADDA    
+0232 F800             BRA             
+0234 0238                     STEP4   
+0236 00D9  ADDA       ADD     R3 R3 R1
+0238 F290  STEP4      SRAI    R2 R2   
+023A 0001                     $1      
+023C C248             SLLI    R1 R1   
+023E 0001                     $1      
+0240 31F8             ADDI    R7 R7   
+0242 0001                     $1      
+0244 5238             SLTI    R0 R7   
+0246 0009                     $9      
+0248 9800             BRN             
+024A 0224                     STEP3   
+024C 5220  STEP6      SLTI    R0 R4   
+024E 0001                     $1      
+0250 C800             BRZ             
+0252 0258                     NEGATEANS
+0254 F800             BRA             
+0256 025E                     DONE    
+0258 80D8  NEGATEAN   NOT     R3 R3   
+025A 30D8             ADDI    R3 R3   
+025C 0001                     $1      
+025E 3803  DONE       SW      R0 R3   
+0260 0104                     Y       
+0262 FE00             STOP            
+0100 FFFB  A          .DW     $FFFB   
+0102 0071  B          .DW     $0071   
+0104 0000  Y          .DW     $0      

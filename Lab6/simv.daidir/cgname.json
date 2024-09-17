@@ -1,0 +1,72 @@
+{
+    "_vcs_unit__166629190": [
+        "_vcs_unit__166629190",
+        "M32c2",
+        "module"
+    ],
+    "memory1024x16": [
+        "memory1024x16",
+        "LBGWb",
+        "module"
+    ],
+    "memory_synthesis": [
+        "memory_synthesis",
+        "wrad1",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "Memory": [
+        "Memory",
+        "f0K8C",
+        "module"
+    ],
+    "SevenSegmentControl": [
+        "SevenSegmentControl",
+        "pjySW",
+        "module"
+    ],
+    "memory1024x16_program": [
+        "memory1024x16_program",
+        "LTm6Y",
+        "module"
+    ],
+    "SevenSegmentDigit": [
+        "SevenSegmentDigit",
+        "wDpck",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "comb_write_reg": [
+        "comb_write_reg",
+        "TiIVQ",
+        "module"
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module"
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module"
+    ],
+    "RISC240_top": [
+        "RISC240_top",
+        "zRShV",
+        "module"
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module"
+    ]
+}
